@@ -1,0 +1,28 @@
+
+
+public class MyQuestions {
+
+String question;
+String answer; 
+int id; 
+
+public MyQuestions(int i, String q, String a) {
+id = i;
+question = q;
+answer = a; 
+
+}
+
+public int getId() {
+	return id;
+}
+
+public String getQuestion() {
+	return question; 
+}
+
+public String getAnswer() {
+	return answer; 
+}
+
+}
