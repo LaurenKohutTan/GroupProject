@@ -16,10 +16,10 @@ SpringApplication.run(DemoApplication.class, args);
 
 @GetMapping("/hello")
 public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+
 	if (name.equals("Lauren")) {
-		return String.format("test %s!", name);
+		return String.format("%s is from New Jersey!", name);
 	}
-	
 return String.format("Hello %s!", name);
 }
 }
