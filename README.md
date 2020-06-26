@@ -16,6 +16,12 @@ The classes run using a testing class which runs through a sample txt file with 
 ## Data
 The data project takes the Question class from the QuestionBank project and uses a CrudRepository to store question objects and chooses a random question to output.
 
+## Demo
+This project contains the files from tech exercise #2 and #4.
+
+## gs-accessing-data-jpa-master
+This project contains the files from tech exercise #3.
+
 
 
 
