@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring Boot Form Demo</title>
+</head>
+<body>
+    <div align="center">
+        <h1>SMARTQuiz Demo</h1>
+        <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+        <a href="/register">Click here to being assessment</a>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+    </div>
+</body>
+</html>
