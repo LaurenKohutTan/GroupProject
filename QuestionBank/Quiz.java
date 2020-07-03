@@ -110,4 +110,10 @@ public class Quiz {
 	{
 		return score;
 	}
+	
+	//Returns a question
+	public Question get(int n)
+	{
+		return quiz.get(n);
+	}
 }
