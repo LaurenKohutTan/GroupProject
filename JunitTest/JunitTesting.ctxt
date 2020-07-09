@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=JunitTesting
+comment1.params=x
+comment1.target=int\ squareNum(int)
+comment2.params=phrase
+comment2.target=int\ countAs(java.lang.String)
+numComments=3
