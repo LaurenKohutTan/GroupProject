@@ -30,12 +30,18 @@ public class Question {
 		return question;
 	}
 	
+	public String getQuestion()
+	{
+		return question;
+	}
+	
+	
 	//Return a particular answer - possibly used for alternate displays
 	public String get(int n)
 	{
 		return answers.get(n);
 	}
-	
+
 	//Return all answers
 	public String answers()
 	{
