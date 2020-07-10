@@ -31,8 +31,11 @@
         <h1>Assessment Title</h1>
                 
         <form action="#" th:action="@{/register}" method="post" th:object="${output}">
-        	<label>Full name:</label>
-        	<input type="text" th:field="*{name}" /><br/>
+        	<label>FIrst name:</label>
+        	<input type="text" th:field="*{firstName}" /><br/>
+        	
+        	<label>Last name:</label>
+        	<input type="text" th:field="*{lastName}" /><br/>
         
  
         	<label>Class/Period:</label>
@@ -40,12 +43,29 @@
  			<br/>
  			<br/>
  			
-        	<label><span th:text="${output.question}"></span></label>
-
-        	<input type="radio" th:field="*{answerChosen}" value="A" /><span th:text="${output.answer1}"></span>
-       	    <input type="radio" th:field="*{answerChosen}" value="B" /><span th:text="${output.answer2}"></span>
-       	    <input type="radio" th:field="*{answerChosen}" value="C" /><span th:text="${output.answer3}"></span>
-       	    <input type="radio" th:field="*{answerChosen}" value="D" /><span th:text="${output.answer4}"></span><br/>
+        	<label><span th:text="${output.questionPhrase1}"></span></label>
+        	<input type="radio" th:field="*{answerChosen1}" value="A" /><span th:text="${output.answer1}"></span>
+       	    <input type="radio" th:field="*{answerChosen1}" value="B" /><span th:text="${output.answer2}"></span>
+       	    <input type="radio" th:field="*{answerChosen1}" value="C" /><span th:text="${output.answer3}"></span>
+       	    <input type="radio" th:field="*{answerChosen1}" value="D" /><span th:text="${output.answer4}"></span><br/>
+       	    
+       	    <label><span th:text="${output.questionPhrase2}"></span></label>
+       	    <input type="radio" th:field="*{answerChosen2}" value="A" /><span th:text="${output.answer1}"></span>
+       	    <input type="radio" th:field="*{answerChosen2}" value="B" /><span th:text="${output.answer2}"></span>
+       	    <input type="radio" th:field="*{answerChosen2}" value="C" /><span th:text="${output.answer3}"></span>
+       	    <input type="radio" th:field="*{answerChosen2}" value="D" /><span th:text="${output.answer4}"></span><br/>
+       	    
+       	    <label><span th:text="${output.questionPhrase3}"></span></label>
+       	    <input type="radio" th:field="*{answerChosen3}" value="A" /><span th:text="${output.answer1}"></span>
+       	    <input type="radio" th:field="*{answerChosen3}" value="B" /><span th:text="${output.answer2}"></span>
+       	    <input type="radio" th:field="*{answerChosen3}" value="C" /><span th:text="${output.answer3}"></span>
+       	    <input type="radio" th:field="*{answerChosen3}" value="D" /><span th:text="${output.answer4}"></span><br/>
+       	    
+       	    <label><span th:text="${output.questionPhrase4}"></span></label>
+       	    <input type="radio" th:field="*{answerChosen4}" value="A" /><span th:text="${output.answer1}"></span>
+       	    <input type="radio" th:field="*{answerChosen4}" value="B" /><span th:text="${output.answer2}"></span>
+       	    <input type="radio" th:field="*{answerChosen4}" value="C" /><span th:text="${output.answer3}"></span>
+       	    <input type="radio" th:field="*{answerChosen4}" value="D" /><span th:text="${output.answer4}"></span><br/>
 			
 			<button type="submit">Submit</button> 
 			

@@ -35,6 +35,48 @@ public class Quiz {
 		}
 	}
 	
+	
+	
+	public ArrayList<Question> getQuiz() {
+		return quiz;
+	}
+
+	public void setQuiz(ArrayList<Question> quiz) {
+		this.quiz = quiz;
+	}
+
+	public ArrayList<Integer> getAnswers() {
+		return answers;
+	}
+
+	public void setAnswers(ArrayList<Integer> answers) {
+		this.answers = answers;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public void setResults(ArrayList<Integer> results) {
+		this.results = results;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
 	//Add a new question to the quiz after checking that it isn't a duplicate - returns true if added
 	public boolean add(Question q)
 	{

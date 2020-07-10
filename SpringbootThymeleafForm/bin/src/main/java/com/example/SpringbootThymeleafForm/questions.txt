@@ -1,0 +1,42 @@
+Which is the smallest number?
+one
+two
+three
+four
+
+Which comes first alphabetically?
+Andy
+Barb
+Carl
+Dawn
+
+Which is the biggest number?
+203
+37
+-17
+0.0
+
+Which has the most letters?
+Sacramento
+Cleveland
+Boston
+Laramie
+
+Which one doesn't belong?
+Volkswagen
+Red
+Green
+Blue
+
+Which happened first?
+The invention of the wheel
+World War I
+The release of "Star Wars"
+
+Who wrote "Eleanor Rigby"?
+Paul McCartney
+John Lennon
+George Harrison
+Ringo Starr
+Pete Best
+

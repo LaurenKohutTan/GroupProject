@@ -2,29 +2,58 @@ package com.example.SpringbootThymeleafForm;
 
 
 public class User {
-	 private String name;
+	 private String firstName;
+	 private String lastName;
 	 private String Period;
 	 
 	    
-	public String getName() {
-		return name;
+	
+
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+
+
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
+
+
+
+
+	public String getLastName() {
+		return lastName;
+	}
+
+
+
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+
+
 
 	public String getPeriod() {
 		return Period;
 	}
 
+
+
+
 	public void setPeriod(String period) {
 		Period = period;
 	}
 
+
+
+
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", Period=" + Period + "]";
+		return "User [name=" + firstName + " " + lastName + ", Period=" + Period + "]";
 	 
 }
 }
