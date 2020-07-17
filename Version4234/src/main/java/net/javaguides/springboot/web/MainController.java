@@ -21,7 +21,7 @@ public class MainController {
 		return "index";
 	}
 	
-	@GetMapping("/createAss")
+	@GetMapping("/create")
     public String makeForm(Model model2) {
 		
 		Output output2 = new Output();
@@ -30,7 +30,7 @@ public class MainController {
         return "create";
     }
 	
-	@GetMapping("/register")
+	@GetMapping("/assessment")
     public String showForm(Model model) {
 		
 		Output output = new Output();
