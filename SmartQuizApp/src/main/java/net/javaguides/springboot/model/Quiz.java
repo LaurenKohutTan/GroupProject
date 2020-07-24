@@ -83,7 +83,7 @@ public class Quiz {
 		if (contains(q))
 			return false;
 		
-		quiz.add(new Question(q));
+		quiz.add(new Question());
 		return true;
 	}
 	
@@ -95,24 +95,24 @@ public class Quiz {
 					return true;
 		return false;
 	}
-	
+	/*
 	//Rearrange the order of the answers in each question
 	public void randomize()
 	{
 		for (int i = 0; i < quiz.size(); i++)
 		{
-			Question temp = new Question(quiz.get(i));
+			Question temp = new Question();
 			temp.randomize();
 			quiz.set(i, temp);
 		}
 	}
-	
+	*/
 	//Returns the name
 	public String getName()
 	{
 		return lastName + ", " + firstName;
 	}
-	
+	/*
 	//Returns in a quiz format, with name, question, and all answers for each - used for testing, but could use in a print quiz option
 	public String toString()
 	{
@@ -121,13 +121,13 @@ public class Quiz {
 			temp += "" + (i + 1) + ") " + quiz.get(i) + "\n" + quiz.get(i).answersIndent() + "\n";
 		return temp.substring(0, temp.length()-1);
 	}
-	
+	*/
 	//Returns the number of questions in the quiz
 	public int size()
 	{
 		return quiz.size();
 	}
-	
+	/*
 	//Takes in the set of answers, checks them, stores those results (right = 1, wrong = 0), and returns the number of correct answers
 	public int check(ArrayList<Integer> a)
 	{
@@ -142,7 +142,7 @@ public class Quiz {
 				results.add(0);
 		return score;
 	}
-	
+	*/
 	//Returns the right/wrong results as 1/0
 	public ArrayList<Integer> getResults()
 	{

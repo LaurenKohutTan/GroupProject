@@ -1,101 +1,116 @@
 package net.javaguides.springboot.model;
-import java.util.ArrayList;
 
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+
+@Entity
+@Table(name =  "question", uniqueConstraints = @UniqueConstraint(columnNames = "id"))
 public class Question {
-	private String question;				//The question itself
-	private ArrayList<String> answers;		//Multiple choice answers
-	private int correct;					//Which answer is correct
+	
+	@Id
+	@GeneratedValue
+	@Column(name= "id")
+	private Integer id;
+	@Column(name= "Question")
+	private String Question;
+	@Column(name= "Ans1")
+	private String Ans1;
+	@Column(name= "Ans2")
+	private String Ans2;
+	@Column(name= "Ans3")
+	private String Ans3;
+	@Column(name= "Ans4")
+	private String Ans4;
+	@Column(name= "correct")
+	private Integer correct;
 	
 	
-	public Question(String s, ArrayList<String> a)
-	{
-		question = s;
-		answers = new ArrayList<>();
-		answers.addAll(a);
+	public Question() {
+		
 	}
-	
-	//Copy constructor - used to add questions to new lists to ensure they're separate instances
-	public Question(Question q)
-	{
-		question = q.toString();
-		answers = new ArrayList<>();
-		answers.addAll(q.getAnswers());
-		correct = q.correct;
-	}
-	
-	//The toString displays just the question (no answers)
-	public String toString()
-	{
-		return question;
-	}
-	
-	public String getQuestion()
-	{
-		return question;
-	}
-	
-	
-	//Return a particular answer - possibly used for alternate displays
-	public String get(int n)
-	{
-		return answers.get(n);
+	public Question(Question q) {
+		
 	}
 
-	//Return all answers
-	public String answers()
-	{
-		String temp = "";
-		for (int i = 0; i < answers.size(); i++)
-			temp += (char)(97+i) + ") " + answers.get(i) + "\n";
-		return temp;
+
+	public Integer getId() {
+		return id;
+	}
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
+	public String getQuestion() {
+		return Question;
+	}
+
+
+	public void setQuestion(String question) {
+		Question = question;
+	}
+
+
+	public String getAns1() {
+		return Ans1;
+	}
+
+
+	public void setAns1(String ans1) {
+		Ans1 = ans1;
+	}
+
+
+	public String getAns2() {
+		return Ans2;
+	}
+
+
+	public void setAns2(String ans2) {
+		Ans2 = ans2;
+	}
+
+
+	public String getAns3() {
+		return Ans3;
+	}
+
+
+	public void setAns3(String ans3) {
+		Ans3 = ans3;
+	}
+
+
+	public String getAns4() {
+		return Ans4;
+	}
+
+
+	public void setAns4(String ans4) {
+		Ans4 = ans4;
+	}
+
+
+	public Integer getCorrect() {
+		return correct;
+	}
+
+
+	public void setCorrect(Integer correct) {
+		this.correct = correct;
 	}
 	
-	//Return all answers with a, b, c, etc formatting
-	public String answersIndent()
-	{
-		String temp = "";
-		for (int i = 0; i < answers.size(); i++)
-			temp += "\t" + (char)(97+i) + ") " + answers.get(i) + "\n";
-		return temp;
-	}
 	
-	//Return the list of answers, to be used in a main for display
-	public ArrayList<String> getAnswers()
-	{
-		return answers;
-	}
 	
-	//Check to see if a tester's answer is correct
-	public boolean isRight(int n)
-	{
-		return n == correct;
-	}
 	
-	//Compare two questions to see if they're the same - avoids duplicating in lists of questions
-	public boolean equals(Question other)
-	{
-		return question.equals(other.toString());
-	}
 	
-	//Rearrange the order of answers in a question
-	public void randomize()
-	{
-		ArrayList<String> temp = new ArrayList<String>();
-		String right = answers.get(correct);
-		
-		while (answers.size() > 0)
-		{
-			int n = (int)(Math.random() * answers.size());
-			temp.add(answers.remove(n));
-		}
-		
-		answers = temp;
-		
-		for (int i = 0; i < answers.size(); i++)
-		{
-			if (answers.get(i).equals(right))
-				correct = i;
-		}
-	}
+	
+
 }

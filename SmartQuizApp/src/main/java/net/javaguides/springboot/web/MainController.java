@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import net.javaguides.springboot.model.Output;
+import net.javaguides.springboot.model.Question;
 import net.javaguides.springboot.repository.OutputRepository;
 
 @Controller
@@ -29,9 +30,12 @@ public class MainController {
 	@GetMapping("/create")
     public String makeForm(Model model2) {
 		
-		Output output2 = new Output();
-        model2.addAttribute("output2", output2);
-         
+		//Output output2 = new Output();
+       // model2.addAttribute("output2", output2);
+		
+		Question question = new Question();
+	    model2.addAttribute("question", question); 
+		
         return "create";
     }
 	

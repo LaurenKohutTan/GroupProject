@@ -67,15 +67,27 @@ public class Output {
         answers.add("answer B");
         answers.add("answer C");
         answers.add("answer D");
+        /*
         Question question1 = new Question("Question 1?", answers);
         Question question2 = new Question("Question 2?", answers);
         Question question3 = new Question("Question 3?", answers);
         Question question4 = new Question("Question 4?", answers);
+        */
+        Question question1 = new Question();
+        Question question2 = new Question();
+        Question question3 = new Question();
+        Question question4 = new Question();
 		firstName = getUser().getFirstName();
 		lastName = getUser().getLastName();
 		period = user.getPeriod();
 		
 		QuestionBank q = new QuestionBank();
+		/*
+		q.add(question1);
+		q.add(question2);
+		q.add(question3);
+		q.add(question4);
+		*/
 		q.add(question1);
 		q.add(question2);
 		q.add(question3);
@@ -88,10 +100,12 @@ public class Output {
 		
 		// Right now the answer choices are being taken from only question 1, but we need to put stuff in an arraylist
 		// so we don't have an exponential amount of answer variables. 
+		/*
 		answer1 = quiz.getQuiz().get(0).getAnswers().get(0);
 		answer2 = quiz.getQuiz().get(0).getAnswers().get(1);
 		answer3 = quiz.getQuiz().get(0).getAnswers().get(2);
 		answer4 = quiz.getQuiz().get(0).getAnswers().get(3);
+		*/
 		answerChosen1 = "";
 		answerChosen2 = "";
 		answerChosen3 = "";

@@ -3,6 +3,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Submission Successful</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
 <style type="text/css">
     span {
         display: inline-block;
@@ -14,7 +18,50 @@
 <body>
 <div align="center">
     <h2>Create a new assessment</h2>
+    
+  <form th:action="@{/create}" method="post" th:object="${question}">
+  
+  					<div class="form-group">
+						<label class="control-label" for="id"> Id (number) </label>
+						<input id="id" class="form-control" th:field="*{id}"
+							required autofocus="autofocus" />
+  					</div>
+					<div class="form-group">
+						<label class="control-label" for="question"> Question </label>
+						<input id="question" class="form-control" th:field="*{question}"
+							required autofocus="autofocus" />
+					</div>
 
+					<div class="form-group">
+						<label class="control-label" for="Ans1"> Answer Choice 1 </label> <input
+							id="Ans1" class="form-control" th:field="*{Ans1}"
+							required autofocus="autofocus" />
+					</div>
+
+					<div class="form-group">
+						<label class="control-label" for="Ans2"> Answer Choice 2 </label> <input
+							id="Ans2" class="form-control" th:field="*{Ans2}" required
+							autofocus="autofocus" />
+					</div>
+
+					<div class="form-group">
+						<label class="control-label" for="Ans3"> Answer Choice 3 </label> <input
+							id="Ans3" class="form-control" th:field="*{Ans3}" required autofocus="autofocus" />
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label" for="Ans4"> Answer Choice 4 </label> <input
+							id="Ans4" class="form-control" th:field="*{Ans4}" required autofocus="autofocus" />
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="correct"> Correct Answer Choice (number) </label> <input
+							id="correct" class="form-control" th:field="*{correct}" required autofocus="autofocus" />
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-success">Add Question</button>
+						
+					</div>
+				</form>
 </div>
 </body>
 </html>
