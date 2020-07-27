@@ -48,4 +48,9 @@ public class QuestionBank {
 		
 		return temp;
 	}
+	
+	public Question get(int index)
+    {
+        return bank.get(index);
+    }
 }

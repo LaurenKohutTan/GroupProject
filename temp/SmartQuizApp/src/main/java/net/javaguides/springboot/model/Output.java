@@ -67,12 +67,12 @@ public class Output {
         answers.add("answer B");
         answers.add("answer C");
         answers.add("answer D");
+        
+        Question question1 = new Question("Question 1?", answers, 0);
+        Question question2 = new Question("Question 2?", answers, 1);
+        Question question3 = new Question("Question 3?", answers, 2);
+        Question question4 = new Question("Question 4?", answers, 3);
         /*
-        Question question1 = new Question("Question 1?", answers);
-        Question question2 = new Question("Question 2?", answers);
-        Question question3 = new Question("Question 3?", answers);
-        Question question4 = new Question("Question 4?", answers);
-        */
         Question question1 = new Question();
         Question question2 = new Question();
         Question question3 = new Question();
@@ -80,7 +80,7 @@ public class Output {
 		firstName = getUser().getFirstName();
 		lastName = getUser().getLastName();
 		period = user.getPeriod();
-		
+		*/
 		QuestionBank q = new QuestionBank();
 		/*
 		q.add(question1);
