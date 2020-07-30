@@ -27,8 +27,9 @@
 </style>
 </head>
 <body>
-    <div align="center">
+  <!--  <div align="center">
         <h1>Assessment Title</h1>
+         
          <form action="#" th:action="@{/register}" method="post" th:object="${output}">
          
          	<label>First Name:</label>
@@ -40,7 +41,7 @@
         	<input type="text" th:field="*{period}" /><br/>
  			<br/>
  			<br/>
-         
+        
           	<label><span th:text="${output.questionPhrase4}"></span></label>
        	    <input type="radio" th:field="*{answerChosen4}" value="A" /><span th:text="${output.answer1}"></span>
        	    <input type="radio" th:field="*{answerChosen4}" value="B" /><span th:text="${output.answer2}"></span>
@@ -65,10 +66,51 @@
        	    <input type="radio" th:field="*{answerChosen1}" value="C" /><span th:text="${output.answer3}"></span>
        	    <input type="radio" th:field="*{answerChosen1}" value="D" /><span th:text="${output.answer4}"></span><br/>
 		
-       	    <button type="submit">Submit</button> 
+       	     <button type="submit">Submit</button> 
 			
         </form>
-        
-    </div>
+         
+       <h1>Smart Quiz</h1>
+       
+       <form method="post" th:object="${question}">
+       
+       <tr th:each="question : ${question}">
+       
+       <td th:text="${question.questionPhrase}">Question</td>
+       <input type="radio" th:field="*{chosen}" value="1" /><td th:text="${question.Ans1}">Answer 1</td>
+       <input type="radio" th:field="*{chosen}" value="2" /><td th:text="${question.Ans2}">Answer 2</td>
+       <input type="radio" th:field="*{chosen}" value="3" /><td th:text="${question.Ans3}">Answer 3</td>
+       <input type="radio" th:field="*{chosen}" value="4" /><td th:text="${question.Ans4}">Answer 4</td>
+       <br>
+       <br>
+       </tr>
+        	 <button type="submit">Submit</button> 
+       
+      </form>
+
+
+
+
+
+ <!--   </div>--> 
+ 
+ 
+ <h1>Smart Quiz</h1>
+       
+      
+       
+       <tr th:each="question : ${question}">
+       
+       <td th:text="${question.questionPhrase}">Question</td>
+       <input type="radio"  value="A" /><td th:text="${question.Ans1}">Answer 1</td>
+       <input type="radio"  value="B" /><td th:text="${question.Ans2}">Answer 2</td>
+       <input type="radio"  value="C" /><td th:text="${question.Ans3}">Answer 3</td>
+       <input type="radio"  value="D" /><td th:text="${question.Ans4}">Answer 4</td>
+       <br>
+       <br>
+       </tr>
+        	 <button type="submit">Submit</button> 
+       
+      
 </body>
 </html>

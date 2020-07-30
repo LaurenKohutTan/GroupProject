@@ -30,7 +30,8 @@ public class Question {
 	private String Ans4;
 	@Column(name= "correct")
 	private Integer correct;
-	
+	@Column(name= "chosen")
+	private Integer chosen;
 	@Transient
 	private ArrayList<String> answers;
 	
@@ -48,6 +49,7 @@ public class Question {
         
         answers = q.getAnswers();
         correct = q.correct;
+        chosen = q.chosen;
         Ans1 = answers.get(0);
         Ans2 = answers.get(1);
         Ans3 = answers.get(2);
@@ -64,6 +66,7 @@ public class Question {
         questionPhrase = s;
         answers = a;
         this.correct = correct;
+        this.chosen = chosen;
         Ans1 = a.get(0);
         Ans2 = a.get(1);
         Ans3 = a.get(2);
@@ -80,7 +83,16 @@ public class Question {
 		this.id = id;
 	}
 
+	public Integer getChosen() {
+		return chosen;
+	}
 
+
+	public void setChosen(Integer chosen) {
+		this.chosen = chosen;
+	}
+	
+	
 	public String getQuestionPhrase() {
 		return questionPhrase;
 	}
@@ -201,7 +213,7 @@ public class Question {
 	@Override
 	public String toString() {
 		return "Question [id=" + id + ", questionPhrase=" + questionPhrase + ", Ans1=" + Ans1 + ", Ans2=" + Ans2
-				+ ", Ans3=" + Ans3 + ", Ans4=" + Ans4 + ", correct=" + correct + "]";
+				+ ", Ans3=" + Ans3 + ", Ans4=" + Ans4 + ", correct=" + correct +  ", chosen=" + chosen + "]";
 	}
 	
 }
