@@ -14,6 +14,10 @@ This package runs as a Spring boot application. Right now, QuestionBank contains
 - User class which represents a system user (teacher or student) takes input from an HTML form and saves it in a database.
 - Output class contains a User and Quiz object which then can be used to output the quiz questions for the specific user on the webpage.
 - MainController class that handles the HTTP GET and POST requests.
+- QuestionRepository - an interface that extends CrudRepository which holds Question objects and corresponds to the Question sql database.
+- UserRepository - an interface that extends CrudRepository which holds User objects and corresponds to the User sql database.
+- OutputRepository - an interface that extends CrudRepository which holds Output objects and corresponds to the Output sql database.
+- QuizTest - a Junit test class which tests the methods in the Quiz class.
 
 
 ## Data
