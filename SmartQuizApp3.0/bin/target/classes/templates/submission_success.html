@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Submission Successful</title>
+<style type="text/css">
+    span {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<div align="center">
+    <h2>Successfully Submitted </h2>
+    
+    
+    
+    <tr th:each="question : ${question}">
+       
+       <td th:text="${question.questionPhrase}">Question</td>
+       <td th:text="${question.correct}">Correct Answer</td>
+       <td th:text="${question.chosen}">Answer choice</td>
+       
+     
+       <br>
+       <br>
+       </tr>
+    
+    
+    <!--  
+    <span>First name:</span><span th:text="${output.firstName}"></span><br/>
+	<span>Last name:</span><span th:text="${output.lastName}"></span><br/>
+    <span>Period:</span><span th:text="${output.period}"></span><br/>
+    
+    <span>Answer choice:</span><span th:text="${output.answerChosen1}"></span><br/>
+    <span>Answer choice:</span><span th:text="${output.answerChosen2}"></span><br/>
+    <span>Answer choice:</span><span th:text="${output.answerChosen3}"></span><br/>
+    <span>Answer choice:</span><span th:text="${output.answerChosen4}"></span><br/>
+    -->
+</div>
+</body>
+</html>
