@@ -48,7 +48,10 @@ public class MainController {
     }
 	
 	@GetMapping("/record")
-	public String record() {
+	public String showRecord(Model model) {
+		List<Output> listOutputs = outputRepository.findAll();
+		System.out.println(listOutputs);
+	    model.addAttribute("listOutputs", listOutputs);
 		return "record";
 	}
 	

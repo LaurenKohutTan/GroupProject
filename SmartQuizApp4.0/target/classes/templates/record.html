@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Submission Successful</title>
-<style type="text/css">
-    span {
-        display: inline-block;
-        width: 200px;
-        text-align: left;
-    }
-</style>
+<meta charset="utf-8"/>
+<title>Product Manager</title>
 </head>
 <body>
 <div align="center">
-    <h2>Quiz Submissions</h2>
+    <h1>Quiz Submissions</h1>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Period</th>
+                <th>Response1</th>
+                <th>Response2</th>
+                <th>Response3</th>
+                <th>Response4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="output : ${listOutputs}">
+                <td th:text="${output.id}">ID</td>
+                <td th:text="${output.firstName}">First name</td>
+                <td th:text="${output.lastName}">Last name</td>
+                <td th:text="${output.period}">Period</td>
+                <td th:text="${output.answerChosen1}">Response 1</td>
+                <td th:text="${output.answerChosen2}">Response 2</td>
+                <td th:text="${output.answerChosen3}">Response 3</td>
+                <td th:text="${output.answerChosen4}">Response 4</td>
 
-
-	<h3>Submission List</h3>
-	<table border="1" cellpadding="2" cellspacing="2">
-		<tr>
-			<th>Id</th>
-			<th>Name</th>
-			<th>period</th>
-			<th>Response 1</th>
-			<th>Response 2</th>
-			<th>Response 3</th>
-			<th>Response 4</th>
-		</tr>
-
-</div>
+            </tr>
+        </tbody>
+    </table>
+</div>   
 </body>
-</html>
 </html>

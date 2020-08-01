@@ -310,10 +310,9 @@ public class Output {
 
 	@Override
 	public String toString() {
-		return "Output [quiz=" + quiz + ", user=" + user + ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", period=" + period + "]";
+		return "Output [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", period=" + period
+				+ ", answerChosen1=" + answerChosen1 + ", answerChosen2=" + answerChosen2 + ", answerChosen3="
+				+ answerChosen3 + ", answerChosen4=" + answerChosen4 + "]";
 	}
-	
 
-
-}
+	}
