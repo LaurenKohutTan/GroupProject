@@ -86,6 +86,9 @@ public class MainController {
 		
 	    output.setScore(quiz.check(ans));
 		outputRepository.save(output);
+		
+		System.out.println(quiz.getCorrectAnswers());
+		System.out.println(ans);
 		System.out.println(output.getScore());	
 			
 	     return "submission_success";   
