@@ -30,8 +30,8 @@ public class Question {
 	private String Ans4;
 	@Column(name= "correct")
 	private Integer correct;
-	@Column(name= "chosen")
-	private Integer chosen;
+	@Transient
+	private String chosen;
 	@Transient
 	private ArrayList<String> answers;
 	
@@ -54,8 +54,7 @@ public class Question {
 		answers.add(q.getAns4());
         correct = q.correct;
         chosen = q.chosen;
-       
-        
+
 	}
 	
 	/**
@@ -68,15 +67,13 @@ public class Question {
         questionPhrase = s;
         answers = a;
         this.correct = correct;
-        this.chosen = chosen;
+        this.chosen = "";
         Ans1 = a.get(0);
         Ans2 = a.get(1);
         Ans3 = a.get(2);
         Ans4 = a.get(3);
     }
     public void addAnswers() {
-    	
-		
   
     }
 
@@ -90,12 +87,12 @@ public class Question {
 		this.id = id;
 	}
 
-	public Integer getChosen() {
+	public String getChosen() {
 		return chosen;
 	}
 
 
-	public void setChosen(Integer chosen) {
+	public void setChosen(String chosen) {
 		this.chosen = chosen;
 	}
 	
@@ -132,6 +129,11 @@ public class Question {
         }
     }
 
+    public String get(int n)
+    {
+    	return answers.get(n);
+    }
+    
 	public String getAns1() {
 		return Ans1;
 	}
@@ -216,6 +218,12 @@ public class Question {
 
 	public void setCorrect(Integer correct) {
 		this.correct = correct;
+	}
+	
+	
+	
+	public void setAnswers(ArrayList<String> answers) {
+		this.answers = answers;
 	}
 	@Override
 	public String toString() {

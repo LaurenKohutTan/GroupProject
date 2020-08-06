@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
+import org.hibernate.annotations.Type;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -14,6 +15,7 @@ import net.javaguides.springboot.repository.QuestionRepository;
 import net.javaguides.springboot.web.MainController;
 
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -35,6 +37,7 @@ public class Output {
 	private String lastName;
 	@Column(name = "period")
 	private String period;
+	
 	@Column(name = "response1")
 	private String answerChosen1;
 	@Column(name = "response2")
@@ -43,76 +46,25 @@ public class Output {
 	private String answerChosen3;
 	@Column(name = "response4")
 	private String answerChosen4;
-
+	
+	@Column(name = "score")
+	private int score;
+	
+	@Transient
+	private ArrayList<Integer> correctAnswers;
+	
+	@Transient
+	private String[] answerChosen;
 	
 	@Transient
 	private Quiz quiz;
-	
+	  
 	@Transient
 	private User user;
 	
-	@Transient
-	private String questionPhrase1;
-	@Transient
-	private String questionPhrase2;	
-	@Transient
-	private String questionPhrase3;	
-	@Transient
-	private String questionPhrase4;	
-	@Transient
-	private ArrayList<String> answersOutput;	
-	@Transient
-	private String answer1;
-	@Transient
-	private String answer2;
-	@Transient
-	private String answer3;
-	@Transient
-	private String answer4;
-	
-	
 	public Output() 
 	{
-		/*
-		user = new User();
-        answersOutput = new ArrayList<String>();
-        answersOutput.add("answer A"); 
-        answersOutput.add("answer B");
-        answersOutput.add("answer C");
-        answersOutput.add("answer D");
-        
-        Question question1 = new Question("Question 1?", answersOutput, 0);
-        Question question2 = new Question("Question 2?", answersOutput, 1);
-        Question question3 = new Question("Question 3?", answersOutput, 2);
-        Question question4 = new Question("Question 4?", answersOutput, 3);
-        
-		QuestionBank q = new QuestionBank();
-
-		q.add(question1);
-		q.add(question2);
-		q.add(question3);
-		q.add(question4);
 		
-		quiz = new Quiz(firstName, lastName, q, 4); 
-		questionPhrase1 = quiz.getQuiz().get(0).getQuestionPhrase();
-		questionPhrase2 = quiz.getQuiz().get(1).getQuestionPhrase();
-		questionPhrase3 = quiz.getQuiz().get(2).getQuestionPhrase();
-		questionPhrase4 = quiz.getQuiz().get(3).getQuestionPhrase();
-		
-		// Right now the answer choices are being taken from only question 1, but we need to put stuff in an arraylist
-		// so we don't have an exponential amount of answer variables. 
-		
-		answer1 = quiz.getQuiz().get(0).getAnswers().get(0);
-		answer2 = quiz.getQuiz().get(0).getAnswers().get(1);
-		answer3 = quiz.getQuiz().get(0).getAnswers().get(2);
-		answer4 = quiz.getQuiz().get(0).getAnswers().get(3);
-		
-		answerChosen1 = "";
-		answerChosen2 = "";
-		answerChosen3 = "";
-		answerChosen4 = "";
-		
-		*/
 	}
 	
 	public Output(List<Question> questions) 
@@ -123,33 +75,23 @@ public class Output {
 		
 		q.loadQuestions(questions);
 		
-
-		quiz = new Quiz(firstName, lastName, q, 4); 
-		questionPhrase1 = quiz.getQuestions().get(0).getQuestionPhrase();
-		questionPhrase2 = quiz.getQuestions().get(1).getQuestionPhrase();
-		questionPhrase3 = quiz.getQuestions().get(2).getQuestionPhrase();
-		questionPhrase4 = quiz.getQuestions().get(3).getQuestionPhrase();
+		int num = 4;
+		quiz = new Quiz(firstName, lastName, q, num); 
 		
 		
-		// Right now the answer choices are being taken from only question 1, but we need to put stuff in an arraylist
-		// so we don't have an exponential amount of answer variables. 
+		answerChosen = new String[num];
+		//answerChosen[0] = "";
+		initializeAnswers(num);
 		
-		answer1 = quiz.getQuestions().get(0).getAnswers().get(0);
-		answer2 = quiz.getQuestions().get(0).getAnswers().get(1);
-		answer3 = quiz.getQuestions().get(0).getAnswers().get(2);
-		answer4 = quiz.getQuestions().get(0).getAnswers().get(3);
-		answersOutput = new ArrayList<String>();
-		answersOutput.add(answer1);
-		answersOutput.add(answer2);
-		answersOutput.add(answer3);
-		answersOutput.add(answer4);
+		score = 0;
+		correctAnswers = quiz.getCorrectAnswers();
 		
-		
-		answerChosen1 = "";
-		answerChosen2 = "";
-		answerChosen3 = "";
-		answerChosen4 = "";
-		
+	}
+	
+	private void initializeAnswers(int n)
+	{
+		for (int i = 0; i < n; i++)
+			answerChosen[i] = "test";
 		
 	}
 	
@@ -204,78 +146,7 @@ public class Output {
 		this.period = period;
 	}
 
-	public String getQuestionPhrase1() {
-		return questionPhrase1;
-	}
-
-	public void setQuestionPhrase1(String questionPhrase1) {
-		this.questionPhrase1 = questionPhrase1;
-	}
-
-	public String getQuestionPhrase2() {
-		return questionPhrase2;
-	}
-
-	public void setQuestionPhrase2(String questionPhrase2) {
-		this.questionPhrase2 = questionPhrase2;
-	}
-
-	public String getQuestionPhrase3() {
-		return questionPhrase3;
-	}
-
-	public void setQuestionPhrase3(String questionPhrase3) {
-		this.questionPhrase3 = questionPhrase3;
-	}
-
-	public String getQuestionPhrase4() {
-		return questionPhrase4;
-	}
-
-	public void setQuestionPhrase4(String questionPhrase4) {
-		this.questionPhrase4 = questionPhrase4;
-	}
-
-	public ArrayList<String> getAnswers() {
-		return answersOutput;
-	}
-
-	public void setAnswers(ArrayList<String> answers) {
-		this.answersOutput = answers;
-	}
-
-	public String getAnswer1() {
-		return answer1;
-	}
-
-	public void setAnswer1(String answer1) {
-		this.answer1 = answer1;
-	}
-
-	public String getAnswer2() {
-		return answer2;
-	}
-
-	public void setAnswer2(String answer2) {
-		this.answer2 = answer2;
-	}
-
-	public String getAnswer3() {
-		return answer3;
-	}
-
-	public void setAnswer3(String answer3) {
-		this.answer3 = answer3;
-	}
-
-	public String getAnswer4() {
-		return answer4;
-	}
-
-	public void setAnswer4(String answer4) {
-		this.answer4 = answer4;
-	}
-
+	
 	public String getAnswerChosen1() {
 		return answerChosen1;
 	}
@@ -306,6 +177,37 @@ public class Output {
 
 	public void setAnswerChosen4(String answerChosen4) {
 		this.answerChosen4 = answerChosen4;
+	}
+	
+	
+	public String[] getAnswerChosen() {
+		return answerChosen;
+	}
+	
+
+	public void setAnswerChosen(String[] answerChosen) {
+		this.answerChosen = answerChosen;
+	}
+
+	
+	
+	public int getScore() {
+		
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+	
+	
+
+	public ArrayList<Integer> getCorrectAnswers() {
+		return correctAnswers;
+	}
+
+	public void setCorrectAnswers(ArrayList<Integer> correctAnswers) {
+		this.correctAnswers = correctAnswers;
 	}
 
 	@Override

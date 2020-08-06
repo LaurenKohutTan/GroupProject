@@ -6,7 +6,7 @@
 <style type="text/css">
     label {
         display: inline-block;
-        width: 200px;
+        width: 450px;
         margin: 5px;
         text-align: left;
     }
@@ -41,29 +41,36 @@
  			<br/>
  			<br/>
          
-          	<label><span th:text="${output.questionPhrase1}"></span></label>
-        	<input type="radio" th:field="*{answerChosen1}" value="A" /><span th:text="${output.answer1}"></span>
-       	    <input type="radio" th:field="*{answerChosen1}" value="B" /><span th:text="${output.answer2}"></span>
-       	    <input type="radio" th:field="*{answerChosen1}" value="C" /><span th:text="${output.answer3}"></span>
-       	    <input type="radio" th:field="*{answerChosen1}" value="D" /><span th:text="${output.answer4}"></span><br/>
+          	<label><span th:text="'1) ' + ${output.getQuiz().get(0).getQuestionPhrase()}"></span></label> <br><br>
+        	<input type="radio" th:field="*{answerChosen1}" value="A" /><span th:text="${output.getQuiz().get(0).getAnswers().get(0)}"></span>
+       	    <input type="radio" th:field="*{answerChosen1}" value="B" /><span th:text="${output.getQuiz().get(0).getAnswers().get(1)}"></span>
+       	    <br>
+       	    <input type="radio" th:field="*{answerChosen1}" value="C" /><span th:text="${output.getQuiz().get(0).getAnswers().get(2)}"></span>
+       	    <input type="radio" th:field="*{answerChosen1}" value="D" /><span th:text="${output.getQuiz().get(0).getAnswers().get(3)}"></span><br/>
         	
-			 <label><span th:text="${output.questionPhrase2}"></span></label>
-       	    <input type="radio" th:field="*{answerChosen2}" value="A" /><span th:text="${output.answer1}"></span>
-       	    <input type="radio" th:field="*{answerChosen2}" value="B" /><span th:text="${output.answer2}"></span>
-       	    <input type="radio" th:field="*{answerChosen2}" value="C" /><span th:text="${output.answer3}"></span>
-       	    <input type="radio" th:field="*{answerChosen2}" value="D" /><span th:text="${output.answer4}"></span><br/>
+        	<br>
+			 <label><span th:text="'2) ' + ${output.getQuiz().get(1).getQuestionPhrase()}"></span></label><br><br>
+       	    <input type="radio" th:field="*{answerChosen2}" value="A" /><span th:text="${output.getQuiz().get(1).getAnswers().get(0)}"></span>
+       	    <input type="radio" th:field="*{answerChosen2}" value="B" /><span th:text="${output.getQuiz().get(1).getAnswers().get(1)}"></span>
+       	    <br>
+       	    <input type="radio" th:field="*{answerChosen2}" value="C" /><span th:text="${output.getQuiz().get(1).getAnswers().get(2)}"></span>
+       	    <input type="radio" th:field="*{answerChosen2}" value="D" /><span th:text="${output.getQuiz().get(1).getAnswers().get(3)}"></span><br/>
        	    
-       	    <label><span th:text="${output.questionPhrase3}"></span></label>
-       	    <input type="radio" th:field="*{answerChosen3}" value="A" /><span th:text="${output.answer1}"></span>
-       	    <input type="radio" th:field="*{answerChosen3}" value="B" /><span th:text="${output.answer2}"></span>
-       	    <input type="radio" th:field="*{answerChosen3}" value="C" /><span th:text="${output.answer3}"></span>
-       	    <input type="radio" th:field="*{answerChosen3}" value="D" /><span th:text="${output.answer4}"></span><br/>
+       	    <br>
+       	    <label><span th:text="'3) ' + ${output.getQuiz().get(2).getQuestionPhrase()}"></span></label><br><br>
+       	    <input type="radio" th:field="*{answerChosen3}" value="A" /><span th:text="${output.getQuiz().get(2).getAnswers().get(0)}"></span>
+       	    <input type="radio" th:field="*{answerChosen3}" value="B" /><span th:text="${output.getQuiz().get(2).getAnswers().get(1)}"></span>
+       	    <br>
+       	    <input type="radio" th:field="*{answerChosen3}" value="C" /><span th:text="${output.getQuiz().get(2).getAnswers().get(2)}"></span>
+       	    <input type="radio" th:field="*{answerChosen3}" value="D" /><span th:text="${output.getQuiz().get(2).getAnswers().get(3)}"></span><br/>
        	    
-       	    <label><span th:text="${output.questionPhrase4}"></span></label>
-       	    <input type="radio" th:field="*{answerChosen4}" value="A" /><span th:text="${output.answer1}"></span>
-       	    <input type="radio" th:field="*{answerChosen4}" value="B" /><span th:text="${output.answer2}"></span>
-       	    <input type="radio" th:field="*{answerChosen4}" value="C" /><span th:text="${output.answer3}"></span>
-       	    <input type="radio" th:field="*{answerChosen4}" value="D" /><span th:text="${output.answer4}"></span><br/>
+       	    <br>
+       	    <label><span th:text="'4) ' + ${output.getQuiz().get(3).getQuestionPhrase()}"></span></label><br><br>
+       	    <input type="radio" th:field="*{answerChosen4}" value="A" /><span th:text="${output.getQuiz().get(3).getAnswers().get(0)}"></span>
+       	    <input type="radio" th:field="*{answerChosen4}" value="B" /><span th:text="${output.getQuiz().get(3).getAnswers().get(1)}"></span>
+       	    <br>
+       	    <input type="radio" th:field="*{answerChosen4}" value="C" /><span th:text="${output.getQuiz().get(3).getAnswers().get(2)}"></span>
+       	    <input type="radio" th:field="*{answerChosen4}" value="D" /><span th:text="${output.getQuiz().get(3).getAnswers().get(3)}"></span><br/>
        	    
        	    		
        	    <button type="submit">Submit</button> 
