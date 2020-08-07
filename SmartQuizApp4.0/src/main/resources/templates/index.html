@@ -2,6 +2,27 @@
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
+<style>
+		img {
+  			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+			}
+		.container { 
+  			height: 120px;
+ 		 	position: relative;
+  			 
+			}
+		.vertical-center {
+  			margin: 500;
+  			position: absolute;
+  			top: 50%;
+  			-ms-transform: translateY(-50%);
+  			transform: translateY(-50%);
+			}
+	
+</style>
+
 <meta charset="ISO-8859-1">
 <title>Application Homepage</title>
 
@@ -13,9 +34,10 @@
 </head>
 <body>
 	<!-- create navigation bar ( header) -->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top" style = background-image:url(images/SmartQuiz.png)>
 		<div class="container">
 			<div class="navbar-header">
+			<br>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
 					aria-controls="navbar">
@@ -23,39 +45,60 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" th:href="@{/}">Registration and
+				<a class="navbar-brand" href="#" th:href="@{/}" style = "color: white;" >Registration and
 					Login Module</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
+			<br>
 				<ul class="nav navbar-nav">
-					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}" style = "color: white;" >Logout</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
+	<br>	
 	<br>
 	<br>
+	
 
 	<div class="container">
-		<h1>SMARTQuiz Demo</h1>
-		Welcome <span sec:authentication="principal.username"> User</span>
 		<br>
+		<br>
+		<br>
+		<br>
+		<h1 style = "color:black; font-family: 'Cambria', ClearType; text-align: center;" >SMARTQuiz Demo</h1>
+		
+		 <img  width="250"
+             th:src="@{images/SmartQuiz.png}" class = "center"/>
+
+		<h1 style = "font-size: 160%; font-family: 'Cambria', ClearType; text-align: center; ">Welcome <span sec:authentication="principal.username">  User</span>!</h1>
 		<br>
 		
 		<div sec:authorize = "hasRole('ROLE_ADMIN')">
-		<h3> Administrator Tools</h3>
+		<h3 style = "color: navy; text-align: center; "> Administrator Tools</h3> 
 		<p>
-		<a href="/create">Click here to add a question</a><br>
-		<a href="/record">Click here to view submissions</a>
+		<h4 >Click here to add a new question</h4>
+		<div class=".vertical-center">
+		 <button onclick="document.location='/create'" style = "padding: 12px 28px;">New Question</button>
+		 <br>
+		 <br>
+		 
+		 <h4>Click here to view submissions</h4>
+		  <button onclick="document.location='/record'" style = "padding: 12px 28px;" >View Submissions</button><br>
+		</div>
+		
+		<a href="/record"></a>
 		<p>
-		<h3> End Admin Only View</h3>
 		</div>
 		
 		<br>
 		<br>
+		<h3 style = "color: navy; text-align: center; "> Student Tools </h3>
 		
-		<a href="/assessment">Click here to begin assessment</a>
+		<h4 style = "text-align: auto;" >Begin Current Assessment</h4>
+		<br>
+		<button onclick="document.location='/assessment'" style = "padding: 12px 28px; margin-left: auto;" >Begin Assessment</button><br><br>
 	</div>
 </body>
 </html>
