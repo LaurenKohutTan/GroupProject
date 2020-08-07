@@ -1,4 +1,4 @@
-package src.test.java.net.javaguides.springboot.model;
+package net.javaguides.springboot.model;
 
 import static org.junit.jupiter.api.Assertions.*;
 

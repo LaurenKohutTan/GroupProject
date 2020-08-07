@@ -1,4 +1,4 @@
-package src.main.java.net.javaguides.springboot.service;
+package net.javaguides.springboot.service;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
 

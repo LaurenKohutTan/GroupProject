@@ -1,4 +1,4 @@
-package src.test.java.net.javaguides.springboot;
+package net.javaguides.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
