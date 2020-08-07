@@ -1,6 +1,6 @@
 # GroupProject
 
-## SpringbootThymeleafForm
+## SmartQuiz4.0
 Smart Quiz is an application that makes multiple quizzes out of a single question bank of questions.
 The web app would be used by the teacher for which they could randomly assign questions to each student in random order. 
 This idea would make it much more difficult for students to share answers due to the fact that they would have a unique set of questions.
