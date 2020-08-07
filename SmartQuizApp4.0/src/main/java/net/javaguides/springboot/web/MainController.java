@@ -18,6 +18,14 @@ import net.javaguides.springboot.model.Quiz;
 import net.javaguides.springboot.repository.OutputRepository;
 import net.javaguides.springboot.repository.QuestionRepository;
 
+/**
+ * The MainController class handles the http get and post requests
+ * @author QuestionBankGroup
+ * @param quiz the quiz object tied to the output
+ * @param outputRepository the respoitory of output objects from the sql database
+ * @param questionRepository the respoitory of question objects from the sql database
+ *
+ */
 @Controller
 public class MainController {
 	
@@ -29,18 +37,31 @@ public class MainController {
 	@Autowired
 	QuestionRepository questionRepository;
 	
+	/**
+	 * Method that handles the login page
+	 * @return login the login.html page
+	 */
 	@GetMapping("/login")
 	public String login() {
 		System.out.println("LOGIN PAGE");
 		return "login";
 	}
 	
+	/**
+	 * Method that handles get mapping for the home page
+	 * @return the index.html page
+	 */
 	@GetMapping("/")
 	public String home() {
 		System.out.println("GETMAPPING INDEX PAGE");
 		return "index";
 	}
 	
+	/**
+	 * Method that handles get mapping for the create page
+	 * @param model the ui model object
+	 * @return the create.html page
+	 */
 	@GetMapping("/create")
     public String makeForm(Model model) {
 		
@@ -51,6 +72,11 @@ public class MainController {
         return "create";
     }
 	
+	/**
+	 * Method that handles get mapping for the record page
+	 * @param model the ui model object
+	 * @return the record.html page
+	 */
 	@GetMapping("/record")
 	public String showRecord(Model model) {
 		List<Output> listOutputs = outputRepository.findAll();
@@ -59,6 +85,11 @@ public class MainController {
 		return "record";
 	}
 	
+	/**
+	 * Method that handles get mapping for the assessment page
+	 * @param model the ui model object
+	 * @return the assessment.html page
+	 */
 	@GetMapping("/assessment")
     public String showAssessment(Model model) {
 		
@@ -73,20 +104,27 @@ public class MainController {
     }
 	
 	
+	/**
+	 * Method that handles post mapping for the assessment page
+	 * @param output the output object from the model
+	 * @return
+	 */
 	@PostMapping("/register")
 	 public String submitAssessment(@ModelAttribute("output") Output output) {
 		System.out.println("POST REGISTER PAGE");
-		ArrayList<Integer> ans = new ArrayList<Integer>();
 		
+		// Store the answers chosen in a list for checking:
+		ArrayList<Integer> ans = new ArrayList<Integer>();
 		ans.add(getNumber(output.getAnswerChosen1()));
 		ans.add(getNumber(output.getAnswerChosen2()));
 		ans.add(getNumber(output.getAnswerChosen3()));
 		ans.add(getNumber(output.getAnswerChosen4()));
 		
-		
+		// Check the answers given:
 	    output.setScore(quiz.check(ans));
 		outputRepository.save(output);
 		
+		// For testing
 		System.out.println(quiz.getCorrectAnswers());
 		System.out.println(ans);
 		System.out.println(output.getScore());	
@@ -94,6 +132,11 @@ public class MainController {
 	     return "submission_success";   
 	 }
 
+	/**
+	 * Method that converts a letter answer into a corresponding index value
+	 * @param ans the letter chosen
+	 * @return the integer which corresponds to the letter
+	 */
 	public int getNumber(String ans) {
 		if (ans.equalsIgnoreCase("A"))
 			return 0;
@@ -106,11 +149,15 @@ public class MainController {
 		}
 	}
 	
+	/**
+	 * Method that handles post mapping for the create page
+	 * @param question the question object from the model
+	 * @return the index.html page
+	 */
 	@PostMapping("/create") 
 	 public String registerQuestion(@ModelAttribute("question") Question question) {
 	 questionRepository.save(question); 
-	 //for (Question q : questionRepository.findAll())
-	 //System.out.println(q);
+
 	 return "index"; }
 	
 }

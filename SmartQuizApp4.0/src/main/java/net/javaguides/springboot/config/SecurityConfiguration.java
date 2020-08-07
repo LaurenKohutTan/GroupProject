@@ -13,6 +13,12 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import net.javaguides.springboot.service.UserService;
 
+/**
+ * Class that retrieves the user id and user role from the database
+ * @param userService the UserService object
+ * @author QuestionBankGroup
+ *
+ */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -20,11 +26,19 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private UserService userService;
 	
+/**
+ * Method that encodes the user password
+ * @return the encoded password
+ */
 	@Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-	
+
+	/**
+	 * Method that authenticates the provider
+	 * @return the authorized provider
+	 */
 	@Bean
     public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider auth = new DaoAuthenticationProvider();
@@ -33,6 +47,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         return auth;
     }
 	
+
 	@Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.authenticationProvider(authenticationProvider());

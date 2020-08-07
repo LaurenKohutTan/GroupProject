@@ -3,6 +3,11 @@ package net.javaguides.springboot.model;
 import java.util.ArrayList;
 /**
  * Quiz Class is a class that holds questions and assesses students.
+ * @param questions store the questions in the quiz
+ * @param answers store the student responses 
+ * @param results stores the results (right/wrong)
+ * @param correctAnswers list that stores the index corresponding to the correct answer for each question
+ * @param score the calculated quiz score
  *
  */
 public class Quiz {

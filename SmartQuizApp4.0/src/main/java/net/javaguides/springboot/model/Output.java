@@ -23,6 +23,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
+/**
+ * 
+ * @author QuestionBankGroup
+ *
+ */
 @Entity
 @Table(name =  "output", uniqueConstraints = @UniqueConstraint(columnNames = "id"))
 public class Output {
@@ -30,7 +35,6 @@ public class Output {
 	@Id
 	@GeneratedValue(strategy =  GenerationType.IDENTITY)
 	private Integer id;
-	
 	@Column(name = "first_name")
 	private String firstName;
 	@Column(name = "last_name")
@@ -46,22 +50,17 @@ public class Output {
 	private String answerChosen3;
 	@Column(name = "response4")
 	private String answerChosen4;
-	
 	@Column(name = "score")
 	private int score;
-	
 	@Transient
 	private ArrayList<Integer> correctAnswers;
-	
 	@Transient
 	private String[] answerChosen;
-	
 	@Transient
-	private Quiz quiz;
-	  
+	private Quiz quiz; 
 	@Transient
 	private User user;
-	
+
 	public Output() 
 	{
 		
@@ -190,7 +189,6 @@ public class Output {
 	}
 
 	
-	
 	public int getScore() {
 		
 		return score;
@@ -201,7 +199,6 @@ public class Output {
 	}
 	
 	
-
 	public ArrayList<Integer> getCorrectAnswers() {
 		return correctAnswers;
 	}
