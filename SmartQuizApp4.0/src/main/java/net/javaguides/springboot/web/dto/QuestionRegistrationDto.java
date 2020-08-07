@@ -1,4 +1,4 @@
-package net.javaguides.springboot.web.dto;
+package src.main.java.net.javaguides.springboot.web.dto;
 
 
 public class QuestionRegistrationDto {

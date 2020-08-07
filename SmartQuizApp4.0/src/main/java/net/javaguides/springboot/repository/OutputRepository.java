@@ -1,4 +1,4 @@
-package net.javaguides.springboot.repository;
+package src.main.java.net.javaguides.springboot.repository;
 
 import java.util.ArrayList;
 import java.util.List;

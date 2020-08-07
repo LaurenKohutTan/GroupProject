@@ -1,0 +1,462 @@
+Project documentation
+<---- javadoc command: ---->
+C:\Program Files (x86)\BlueJ\jdk\bin\javadoc.exe
+-sourcepath
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.11.jar;C:\Program Files (x86)\BlueJ\lib\hamcrest-core-1.3.jar;C:\Program Files (x86)\BlueJ\lib\lang-stride.jar;C:\Program Files (x86)\BlueJ\lib\userlib\bridj-0.6.2.jar;C:\Program Files (x86)\BlueJ\lib\userlib\cmudict04.jar;C:\Program Files (x86)\BlueJ\lib\userlib\cmulex.jar;C:\Program Files (x86)\BlueJ\lib\userlib\cmutimelex.jar;C:\Program Files (x86)\BlueJ\lib\userlib\cmu_us_kal.jar;C:\Program Files (x86)\BlueJ\lib\userlib\csteutils.jar;C:\Program Files (x86)\BlueJ\lib\userlib\en_us.jar;C:\Program Files (x86)\BlueJ\lib\userlib\freetts-jsapi10.jar;C:\Program Files (x86)\BlueJ\lib\userlib\freetts.jar;C:\Program Files (x86)\BlueJ\lib\userlib\noveltts.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;C:\Program Files (x86)\BlueJ\lib\userlib\slf4j-api-1.7.2.jar;C:\Program Files (x86)\BlueJ\lib\userlib\webcam-capture-0.3.10.jar;C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0
+-d
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc
+-encoding
+windows-1252
+-charset
+windows-1252
+-doctitle
+SmartQuizApp4.0
+-windowtitle
+SmartQuizApp4.0
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-link
+http://download.oracle.com/javase/8/docs/api/
+src.test.java.net.javaguides.springboot
+src.test.java.net.javaguides.springboot.model
+src.main.java.net.javaguides.springboot
+src.main.java.net.javaguides.springboot.web
+src.main.java.net.javaguides.springboot.web.dto
+src.main.java.net.javaguides.springboot.service
+src.main.java.net.javaguides.springboot.model
+src.main.java.net.javaguides.springboot.repository
+src.main.java.net.javaguides.springboot.config
+<---- end of javadoc command ---->
+Loading source files for package src.test.java.net.javaguides.springboot...
+Loading source files for package src.test.java.net.javaguides.springboot.model...
+Loading source files for package src.main.java.net.javaguides.springboot...
+Loading source files for package src.main.java.net.javaguides.springboot.web...
+Loading source files for package src.main.java.net.javaguides.springboot.web.dto...
+Loading source files for package src.main.java.net.javaguides.springboot.service...
+Loading source files for package src.main.java.net.javaguides.springboot.model...
+Loading source files for package src.main.java.net.javaguides.springboot.repository...
+Loading source files for package src.main.java.net.javaguides.springboot.config...
+Constructing Javadoc information...
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\test\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplicationTests.java:3: error: package org.junit.jupiter.api does not exist
+import org.junit.jupiter.api.Test;
+                            ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\test\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplicationTests.java:4: error: package org.springframework.boot.test.context does not exist
+import org.springframework.boot.test.context.SpringBootTest;
+                                            ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\test\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplicationTests.java:6: error: cannot find symbol
+@SpringBootTest
+ ^
+  symbol: class SpringBootTest
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\test\java\net\javaguides\springboot\model\QuizTest.java:3: error: package org.junit.jupiter.api does not exist
+import static org.junit.jupiter.api.Assertions.*;
+                                   ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\test\java\net\javaguides\springboot\model\QuizTest.java:5: error: package org.junit.jupiter.api does not exist
+import org.junit.jupiter.api.Test;
+                            ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplication.java:3: error: package org.springframework.boot does not exist
+import org.springframework.boot.SpringApplication;
+                               ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplication.java:4: error: package org.springframework.boot.autoconfigure does not exist
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+                                             ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplication.java:5: error: package org.springframework.data.jpa.repository.config does not exist
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+                                                     ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplication.java:12: error: cannot find symbol
+@EnableJpaRepositories(basePackages = "net.javaguides.springboot.repository")
+ ^
+  symbol: class EnableJpaRepositories
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplication.java:13: error: cannot find symbol
+@SpringBootApplication
+ ^
+  symbol: class SpringBootApplication
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:6: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:7: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Controller;
+                                     ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:8: error: package org.springframework.ui does not exist
+import org.springframework.ui.Model;
+                             ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:9: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.GetMapping;
+                                              ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:10: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.ModelAttribute;
+                                              ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:11: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.PostMapping;
+                                              ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:12: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.RequestMapping;
+                                              ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:13: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.RequestMethod;
+                                              ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:15: error: package net.javaguides.springboot.model does not exist
+import net.javaguides.springboot.model.Output;
+                                      ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:16: error: package net.javaguides.springboot.model does not exist
+import net.javaguides.springboot.model.Question;
+                                      ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:17: error: package net.javaguides.springboot.model does not exist
+import net.javaguides.springboot.model.Quiz;
+                                      ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:18: error: package net.javaguides.springboot.repository does not exist
+import net.javaguides.springboot.repository.OutputRepository;
+                                           ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:19: error: package net.javaguides.springboot.repository does not exist
+import net.javaguides.springboot.repository.QuestionRepository;
+                                           ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:29: error: cannot find symbol
+@Controller
+ ^
+  symbol: class Controller
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:32: error: cannot find symbol
+	Quiz quiz;
+	^
+  symbol:   class Quiz
+  location: class MainController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:35: error: cannot find symbol
+	OutputRepository outputRepository;
+	^
+  symbol:   class OutputRepository
+  location: class MainController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:38: error: cannot find symbol
+	QuestionRepository questionRepository;
+	^
+  symbol:   class QuestionRepository
+  location: class MainController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:66: error: cannot find symbol
+    public String makeForm(Model model) {
+                           ^
+  symbol:   class Model
+  location: class MainController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:81: error: cannot find symbol
+	public String showRecord(Model model) {
+	                         ^
+  symbol:   class Model
+  location: class MainController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:94: error: cannot find symbol
+    public String showAssessment(Model model) {
+                                 ^
+  symbol:   class Model
+  location: class MainController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:113: error: cannot find symbol
+	 public String submitAssessment(@ModelAttribute("output") Output output) {
+	                                                          ^
+  symbol:   class Output
+  location: class MainController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\MainController.java:158: error: cannot find symbol
+	 public String registerQuestion(@ModelAttribute("question") Question question) {
+	                                                            ^
+  symbol:   class Question
+  location: class MainController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:3: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Controller;
+                                     ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:4: error: package org.springframework.ui does not exist
+import org.springframework.ui.Model;
+                             ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:5: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.GetMapping;
+                                              ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:6: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.ModelAttribute;
+                                              ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:7: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.PostMapping;
+                                              ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:8: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.RequestMapping;
+                                              ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:10: error: package net.javaguides.springboot.service does not exist
+import net.javaguides.springboot.service.UserService;
+                                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:11: error: package net.javaguides.springboot.web.dto does not exist
+import net.javaguides.springboot.web.dto.UserRegistrationDto;
+                                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:19: error: cannot find symbol
+@Controller
+ ^
+  symbol: class Controller
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:20: error: cannot find symbol
+@RequestMapping("/registration")
+ ^
+  symbol: class RequestMapping
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:23: error: cannot find symbol
+	private UserService userService;
+	        ^
+  symbol:   class UserService
+  location: class UserRegistrationController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:25: error: cannot find symbol
+	public UserRegistrationController(UserService userService) {
+	                                  ^
+  symbol:   class UserService
+  location: class UserRegistrationController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:31: error: cannot find symbol
+    public UserRegistrationDto userRegistrationDto() {
+           ^
+  symbol:   class UserRegistrationDto
+  location: class UserRegistrationController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\web\UserRegistrationController.java:41: error: cannot find symbol
+	public String registerUserAccount(@ModelAttribute("user") UserRegistrationDto registrationDto) {
+	                                                          ^
+  symbol:   class UserRegistrationDto
+  location: class UserRegistrationController
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserService.java:3: error: package org.springframework.security.core.userdetails does not exist
+import org.springframework.security.core.userdetails.UserDetailsService;
+                                                    ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserService.java:5: error: package net.javaguides.springboot.model does not exist
+import net.javaguides.springboot.model.User;
+                                      ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserService.java:6: error: package net.javaguides.springboot.web.dto does not exist
+import net.javaguides.springboot.web.dto.UserRegistrationDto;
+                                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserService.java:8: error: cannot find symbol
+public interface UserService extends UserDetailsService{
+                                     ^
+  symbol: class UserDetailsService
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserService.java:9: error: cannot find symbol
+	User save(UserRegistrationDto registrationDto);
+	          ^
+  symbol:   class UserRegistrationDto
+  location: interface UserService
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserService.java:9: error: cannot find symbol
+	User save(UserRegistrationDto registrationDto);
+	^
+  symbol:   class User
+  location: interface UserService
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:7: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:8: error: package org.springframework.security.core does not exist
+import org.springframework.security.core.GrantedAuthority;
+                                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:9: error: package org.springframework.security.core.authority does not exist
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+                                                  ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:10: error: package org.springframework.security.core.userdetails does not exist
+import org.springframework.security.core.userdetails.UserDetails;
+                                                    ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:11: error: package org.springframework.security.core.userdetails does not exist
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+                                                    ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:12: error: package org.springframework.security.crypto.bcrypt does not exist
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+                                                 ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:13: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Service;
+                                     ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:15: error: package net.javaguides.springboot.model does not exist
+import net.javaguides.springboot.model.Role;
+                                      ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:16: error: package net.javaguides.springboot.model does not exist
+import net.javaguides.springboot.model.User;
+                                      ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:17: error: package net.javaguides.springboot.repository does not exist
+import net.javaguides.springboot.repository.UserRepository;
+                                           ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:18: error: package net.javaguides.springboot.web.dto does not exist
+import net.javaguides.springboot.web.dto.UserRegistrationDto;
+                                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:20: error: cannot find symbol
+@Service
+ ^
+  symbol: class Service
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:23: error: cannot find symbol
+	private UserRepository userRepository;
+	        ^
+  symbol:   class UserRepository
+  location: class UserServiceImpl
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:26: error: cannot find symbol
+	private BCryptPasswordEncoder passwordEncoder;
+	        ^
+  symbol:   class BCryptPasswordEncoder
+  location: class UserServiceImpl
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:28: error: cannot find symbol
+	public UserServiceImpl(UserRepository userRepository) {
+	                       ^
+  symbol:   class UserRepository
+  location: class UserServiceImpl
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:34: error: cannot find symbol
+	public User save(UserRegistrationDto registrationDto) {
+	                 ^
+  symbol:   class UserRegistrationDto
+  location: class UserServiceImpl
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:34: error: cannot find symbol
+	public User save(UserRegistrationDto registrationDto) {
+	       ^
+  symbol:   class User
+  location: class UserServiceImpl
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:43: error: cannot find symbol
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+	       ^
+  symbol:   class UserDetails
+  location: class UserServiceImpl
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:43: error: cannot find symbol
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+	                                                              ^
+  symbol:   class UsernameNotFoundException
+  location: class UserServiceImpl
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:52: error: cannot find symbol
+	private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles){
+	                                                                                ^
+  symbol:   class Role
+  location: class UserServiceImpl
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\service\UserServiceImpl.java:52: error: cannot find symbol
+	private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles){
+	                             ^
+  symbol:   class GrantedAuthority
+  location: class UserServiceImpl
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:6: error: package javax.persistence does not exist
+import javax.persistence.Transient;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:7: error: package javax.persistence does not exist
+import javax.persistence.UniqueConstraint;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:9: error: package org.hibernate.annotations does not exist
+import org.hibernate.annotations.Type;
+                                ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:10: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:11: error: package org.springframework.boot.autoconfigure does not exist
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+                                             ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:12: error: package org.springframework.data.jpa.repository.config does not exist
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+                                                     ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:14: error: package net.javaguides.springboot.repository does not exist
+import net.javaguides.springboot.repository.QuestionRepository;
+                                           ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:15: error: package net.javaguides.springboot.web does not exist
+import net.javaguides.springboot.web.MainController;
+                                    ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:17: error: package javax.persistence does not exist
+import javax.persistence.Column;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:18: error: package javax.persistence does not exist
+import javax.persistence.ElementCollection;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:19: error: package javax.persistence does not exist
+import javax.persistence.Entity;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:20: error: package javax.persistence does not exist
+import javax.persistence.GeneratedValue;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:21: error: package javax.persistence does not exist
+import javax.persistence.GenerationType;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:22: error: package javax.persistence does not exist
+import javax.persistence.Id;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:23: error: package javax.persistence does not exist
+import javax.persistence.Table;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:46: error: cannot find symbol
+@Entity
+ ^
+  symbol: class Entity
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\Output.java:47: error: cannot find symbol
+@Table(name =  "output", uniqueConstraints = @UniqueConstraint(columnNames = "id"))
+ ^
+  symbol: class Table
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:5: error: package javax.persistence does not exist
+import javax.persistence.CascadeType;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:6: error: package javax.persistence does not exist
+import javax.persistence.Column;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:7: error: package javax.persistence does not exist
+import javax.persistence.Entity;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:8: error: package javax.persistence does not exist
+import javax.persistence.FetchType;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:9: error: package javax.persistence does not exist
+import javax.persistence.GeneratedValue;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:10: error: package javax.persistence does not exist
+import javax.persistence.GenerationType;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:11: error: package javax.persistence does not exist
+import javax.persistence.Id;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:12: error: package javax.persistence does not exist
+import javax.persistence.JoinTable;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:13: error: package javax.persistence does not exist
+import javax.persistence.ManyToMany;
+                        ^
+C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\src\main\java\net\javaguides\springboot\model\User.java:14: error: package javax.persistence does not exist
+import javax.persistence.Table;
+                        ^
+Standard Doclet version 1.8.0_144
+Building tree for all the packages and classes...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\test\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplicationTests.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\test\java\net\javaguides\springboot\model\QuizTest.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\RegistrationLoginSpringBootSecurityThymeleafApplication.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\MainController.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\UserRegistrationController.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\dto\QuestionRegistrationDto.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\dto\UserRegistrationDto.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\service\UserService.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\service\UserServiceImpl.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\model\Output.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\model\Question.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\model\QuestionBank.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\model\Quiz.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\model\Role.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\model\User.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\repository\OutputRepository.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\repository\QuestionRepository.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\repository\UserRepository.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\config\SecurityConfiguration.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\overview-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\package-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\package-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\package-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\config\package-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\config\package-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\config\package-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\model\package-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\model\package-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\model\package-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\repository\package-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\repository\package-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\repository\package-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\service\package-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\service\package-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\service\package-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\package-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\package-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\package-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\dto\package-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\dto\package-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\main\java\net\javaguides\springboot\web\dto\package-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\test\java\net\javaguides\springboot\package-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\test\java\net\javaguides\springboot\package-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\test\java\net\javaguides\springboot\package-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\test\java\net\javaguides\springboot\model\package-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\test\java\net\javaguides\springboot\model\package-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\src\test\java\net\javaguides\springboot\model\package-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\constant-values.html...
+Building index for all the packages and classes...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\overview-tree.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\index-all.html...
+Building index for all classes...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\allclasses-frame.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\allclasses-noframe.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\index.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\overview-summary.html...
+Generating C:\Users\ltan\eclipse-workspace\GroupProject\SmartQuizApp4.0\doc\help-doc.html...
+100 warnings

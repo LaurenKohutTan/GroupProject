@@ -1,4 +1,4 @@
-package net.javaguides.springboot.model;
+package src.main.java.net.javaguides.springboot.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

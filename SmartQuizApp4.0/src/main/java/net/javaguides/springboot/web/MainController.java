@@ -1,4 +1,4 @@
-package net.javaguides.springboot.web;
+package src.main.java.net.javaguides.springboot.web;
 
 import java.util.ArrayList;
 import java.util.List;
