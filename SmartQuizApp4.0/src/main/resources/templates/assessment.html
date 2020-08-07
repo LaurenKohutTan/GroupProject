@@ -3,7 +3,19 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Assessment</title>
+
 <style type="text/css">
+body {
+  background-color: rgb(155, 220, 255);;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+d1 {
+        display: inline-block;
+        width: 150px;
+        margin: 5px;
+        text-align: left;
+    }
     label {
         display: inline-block;
         width: 450px;
@@ -12,7 +24,7 @@
     }
     input[type=text], input[type=password], select {
         display: inline-block;
-        width: 100px;
+        width: 150px;
     }
     input[type=radio] {
         margin-left: 45px;
@@ -31,12 +43,12 @@
         <h1>Assessment Title</h1>
          <form action="#" th:action="@{/register}" method="post" th:object="${output}">
          
-         	<label>First Name:</label>
+            <d1>First Name:</d1>
         	<input type="text" th:field="*{firstName}" /><br/>
 
- 			<label>Last Name:</label>
+ 			<d1>Last Name:</d1>
         	<input type="text" th:field="*{lastName}" /><br/>
-         	<label>Class/Period:</label>
+         	<d1>Class/Period:</d1>
         	<input type="text" th:field="*{period}" /><br/>
  			<br/>
  			<br/>
