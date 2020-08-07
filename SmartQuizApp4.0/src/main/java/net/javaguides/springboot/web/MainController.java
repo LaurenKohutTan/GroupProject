@@ -22,8 +22,8 @@ import net.javaguides.springboot.repository.QuestionRepository;
  * The MainController class handles the http get and post requests
  * @author QuestionBankGroup
  * @param quiz the quiz object tied to the output
- * @param outputRepository the respoitory of output objects from the sql database
- * @param questionRepository the respoitory of question objects from the sql database
+ * @param outputRepository the repository of output objects from the sql database
+ * @param questionRepository the repository of question objects from the sql database
  *
  */
 @Controller

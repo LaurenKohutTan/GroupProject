@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import net.javaguides.springboot.service.UserService;
 import net.javaguides.springboot.web.dto.UserRegistrationDto;
 
+/**
+ * The UserRegistrationController class handles the http get and post requests
+ * @author QuestionBankGroup
+ * @param userService UserService object
+ *
+ */
 @Controller
 @RequestMapping("/registration")
 public class UserRegistrationController {

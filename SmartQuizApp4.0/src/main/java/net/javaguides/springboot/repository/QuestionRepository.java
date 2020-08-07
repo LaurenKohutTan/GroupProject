@@ -5,6 +5,11 @@ import org.springframework.stereotype.Repository;
 
 import net.javaguides.springboot.model.Question;
 
+/**
+ * Interface repository that holds Question objects corresponding with sql database 
+ * @author QuestionBankGroup
+ *
+ */
 @Repository
 public interface QuestionRepository extends JpaRepository<Question, Integer> {
 
